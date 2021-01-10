@@ -34,6 +34,22 @@ function countDown(number) {
 countDown(4);
 
 
+=================================================
+rekursi fungsi,,
+=================================================
+
+
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum - startNum === 0) {
+    return [startNum];
+  } else {
+    const numbers = rangeOfNumbers(startNum+1, endNum);
+    numbers.push(startNum);
+    return numbers;
+  }
+}
+console.log(rangeOfNumbers(1, 5))
+
 
 =================================================
 rekursi fungsi,,
