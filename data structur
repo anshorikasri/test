@@ -81,3 +81,14 @@ for(let i = 0; i < products.length; i++){
 ================================================================
 struktur data
 ================================================================
+
+
+((((((metode filter))))))),,  dengan fungsii arrow (panah)
+
+
+const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// Kita ambil data yang hanya habis dibagi dua saja
+const filteredArray = angka.filter((item) => {return item % 2 === 0});
+
+console.log(filteredArray) // -> [2, 4, 6, 8]
