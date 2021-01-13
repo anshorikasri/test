@@ -1,0 +1,50 @@
+============================================================
+priority queue
+============================================================
+
+
+function PriorityQueue() {
+  this.collection = [];
+
+  this.enqueue = function (newItem) {
+    if (this.collection.length == 0) {
+      return this.collection.push(newItem);
+    }
+
+    this.collection = this.collection.reverse();
+    var index = this.collection.findIndex((item) => {
+      return newItem[1] >= item[1];
+    });
+
+    if (index === -1) {
+      this.collection.push(newItem);
+    } else {
+      this.collection.splice(index, 0, newItem);
+    }
+    this.collection.reverse();
+
+    //findIndex(callback)
+    //callback = true || callback =false
+  };
+
+  this.dequeue = function () {
+    if (this.collection.length !== 0) {
+      //value and datatype
+      return this.collection.shift()[0];
+    } else {
+      console.log("no");
+    }
+  };
+
+  this.print = function () {
+    console.log(this.collection);
+  };
+}
+var coba = new PriorityQueue();
+coba.enqueue(["human", 4]);
+coba.enqueue(["v", 1]);
+coba.enqueue(["human", 1]);
+coba.print();
+coba.dequeue();
+
+//Result : [ [ 'v', 1 ], [ 'human', 1 ], [ 'human', 4 ] ]
