@@ -1,0 +1,35 @@
+
+
+
+
+function Person() {
+
+    var energi = 0;
+    
+
+    this.makan = function(piring) {
+        return energi += piring;
+    }
+
+    this.minum = function(botol) {
+        return energi += 0.5*botol;
+    }
+
+    this.lari = function(jarak) {
+        return energi -= 1.5*jarak;
+    }
+
+    this.tampilkanEnergi = function() {
+        console.log(energi);
+    }
+}
+
+//kita instantiate object
+var ansori = new Person();
+
+ansori.makan(10);
+ansori.tampilkanEnergi(); //10
+ansori.minum(10);
+ansori.tampilkanEnergi();//15
+ansori.lari(2);
+ansori.tampilkanEnergi();//12
