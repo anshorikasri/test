@@ -1,0 +1,13 @@
+intersection (a ∩ b): create a set that contains those elements of set a that are also in set b.
+
+let a = new Set([1,2,3]);
+let b = new Set([4,3,2]);
+let intersection = new Set(
+    [...a].filter(x => b.has(x)));
+    // {2,3}
+
+
+
+=======================================================================================================================
+intersection
+=======================================================================================================================
