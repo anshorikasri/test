@@ -1,0 +1,37 @@
+var Map = functiona() {
+    this.collection = {};
+
+    this.add = (key, value) => {
+        this.collection[key] = value;
+        return this.collection[key];
+}
+
+    this.remove = (key) => {
+        if(this.collection.hasOwnProperty(key)) {
+            this.collection.delete(key);
+        }
+    }
+
+    this.get = (key) => {
+        return this.collection[key]
+    }
+    
+    this.has = (item)=> {
+        return (this.collection.hasOwnProperty(item));
+
+    }
+
+this.values = () => {
+    let arr = [];
+    for (let v in this.collection) {
+        arr.push(this.collection[v]);
+    }
+    return arr;
+}
+
+this.size = () => (Object.keys(this.collection).length);
+
+this.clear = () => {
+    this.collection = {};
+};
+};
