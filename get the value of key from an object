@@ -1,0 +1,28 @@
+// here,, the step to gain the value of a key in object,, below are:
+
+
+
+let foods = {
+  apel: 25,
+  jeruk: 32,
+  pisang: 13,
+  anggur: 35,
+  stroberi: 27
+};
+
+function checkInventory(buah) {
+
+    return scannedItem ? foods[scannedItem]:undifined
+    //or  retun foods[scannedItem]
+}
+
+
+
+//so, when we call the function, result are:
+
+console.log(checkInventory("apel"));  // 25
+
+
+
+
+//thank
