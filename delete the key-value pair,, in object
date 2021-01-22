@@ -1,0 +1,37 @@
+// delete the key-value from object, below are:
+
+
+let buah = {
+  apel: 25,
+  jeruk: 32,
+  pisang: 13,
+  anggur: 35,
+  stroberi: 27
+};
+
+delete foods.jeruk; 
+delete foods.anggur;
+delete foods.stroberi;
+
+
+
+===============================================================================
+===============================================================================
+
+
+
+//result are:
+
+console.log(foods);
+
+
+
+let buah = {
+  apel: 25,
+  pisang: 13,
+};
+
+
+//thank
+0 comments on commit 13f9817
+@anshorikasri
