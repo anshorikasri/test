@@ -1,0 +1,37 @@
+// check that did object have the property,, if object have, return true,, below are:
+
+
+//object which will be chek:
+
+let buah = {
+  durian: {
+    ciri: "berduri",
+  },
+  rambutan: {
+    ciri: "berambut",
+  },
+  salak: {
+    ciri: "bersisik",
+  },
+  jeruk: {
+    ciri: "manis",
+  }
+};
+
+
+/*===========================================================================
+tool to check are bellow:
+===========================================================================*/
+
+function isFruitHere(obj) {
+  
+    if(obj in buah){
+      return true
+    } else{
+      return false
+      }
+};
+  
+
+
+console.log(isFruitHere("jeruk"));
