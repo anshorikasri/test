@@ -1,0 +1,36 @@
+// we can input new keys-values pair to an object with some of tools,, below are:
+
+let person{
+mata: 2;
+hidung: 1;
+}
+
+//and, when we waant to add the new element of keys-values,, we can use some of tools, 
+//suppose i want to add key-value like  this 
+//tangan:2;
+//telinga:2;
+//below are:
+
+
+* person.tangan=2;
+
+** person["tangan"]=2;
+
+*** const b="tangan";
+person[b]=2;
+
+
+
+// the result are below:
+
+let person{
+"mata": 2;
+"hidung": 1;
+"tangan":2;
+}
+
+
+
+
+
+//thank
