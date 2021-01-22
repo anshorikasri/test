@@ -1,0 +1,34 @@
+// it's like when we input new key-value pair,,   but in this topic we put just new value,, below are:
+
+let userActivity = {
+  id: 23894201352,
+  date: 'January 1, 2017',
+  data: {
+    totalUsers: 51,
+    online: 42
+  }
+};
+
+// Only change code below this line
+userActivity.data.online=45;
+// Only change code above this line
+
+console.log(userActivity);
+
+
+//after that, the object will be update like here:
+
+let userActivity = {
+  id: 23894201352,
+  date: 'January 1, 2017',
+  data: {
+    totalUsers: 51,
+    online: 45
+  }
+};
+
+
+
+
+
+//thank
